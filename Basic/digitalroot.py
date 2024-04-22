@@ -1,4 +1,6 @@
 '''
+Approach: Find individual digits and add them till result is <10 or result is a single digit number 
+
 Digital Root of 1729 ==>
 
 1 + 7 + 2 + 9 = 19
