@@ -1,3 +1,13 @@
+'''
+Find the sum of the even valued fibonacci sequence numbers whose values 
+do not exceed 4 million (i.e. 4o lakhs).
+
+starting with 1 and 2 the first 10 terms will be -
+
+1 2 3 5 8 13 21 34 55 89
+
+'''
+
 term1 = 1
 term2 = 2
 new_term = 0
