@@ -5,7 +5,7 @@ Author:
 
 Date:
 """
-def lumpsum(principal, 
+def returns(principal, 
             interest_rate, 
             time_in_years, 
             n=1):
