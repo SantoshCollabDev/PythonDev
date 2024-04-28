@@ -1,8 +1,21 @@
 import argparse
-
 from calculators.lumpsum import returns as lumpsum_returns
 from calculators.sip import returns as sip_returns
+from persistence.csv_file import write_result
 
+def store_results(principal, time, rate, 
+                 investment_type, future_value):
+    """ this
+    """
+    write_result(principal, rate, time, 
+                 investment_type, future_value)
+
+def print_result(principal, time, rate, 
+                 investment_type, future_value):
+    """ This method prints results
+    """
+    store_results(principal,time,rate,investment_type, future_value)
+    print(f"for your {investment_type} investment of {principal} will be {round(future_value,2)} in next {time} years")
 
 def argument_parser():
     """ This method creates an argument parser
@@ -53,11 +66,13 @@ if __name__ == "__main__":
             interest_rate = args.rate,
             time_in_years = args.time
         )
-        print(f"Your Investment of {args.principal} will be {round(result,2)} in next {args.time} years")
+        print_result(args.principal,args.time, args.rate,args.investment_type,result)           
+        # print(f"Your Investment of {args.principal} will be {round(result,2)} in next {args.time} years")
     elif args.investment_type == 'sip':
          result = sip_returns(
             invested_amount = args.principal,
             return_rate = args.rate,
             total_period_years = args.time
          )
-         print(f"Your Investment of {args.principal} will be {round(result,2)} in next {args.time} years")
+         print_result(args.principal,args.time, args.rate,args.investment_type,result)           
+        #  print(f"Your Investment of {args.principal} will be {round(result,2)} in next {args.time} years")
