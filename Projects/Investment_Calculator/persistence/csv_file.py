@@ -17,7 +17,8 @@ def write_result(principal, interest_rate, time, investment_type, future_value):
         results_writer = csv.writer(filew)
         if not file_exists:
             results_writer.writerow(['principal', 'interest_rate', 'time', 'investment_type', 'future_value'])   
-        results_writer.writerow([principal, interest_rate, time, investment_type, future_value])
+        results_writer.writerow(
+            [principal, interest_rate, time, investment_type, future_value])
 
 def read_all_results():
     """this

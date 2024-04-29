@@ -12,7 +12,7 @@ def returns(principal,
     """ This function calculates lumpsum returns
     """
     result = principal * ( 1 + ((interest_rate/100)/n)) ** (n * time_in_years)
-    return result
+    return round(result,2)
 
 
 
