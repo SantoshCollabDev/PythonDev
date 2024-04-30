@@ -2,7 +2,7 @@ import argparse
 from calculators.lumpsum import returns as lumpsum_returns
 from calculators.sip import returns as sip_returns
 from persistence.csv_file import write_result
-from decorators.storage import store_in_csv
+from decorators.storage import store_in_csv, store_in_json
 
 # def store_results(principal, time, rate, 
 #                  investment_type, future_value):
@@ -11,7 +11,8 @@ from decorators.storage import store_in_csv
 #     write_result(principal, rate, time, 
 #                  investment_type, future_value)
 
-@store_in_csv   
+# @store_in_csv
+@store_in_json   
 def print_result(principal, time, rate, 
                  investment_type, future_value):
     """ This method prints results

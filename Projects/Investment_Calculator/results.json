@@ -1,0 +1,30 @@
+[
+  {
+    "principal": 100000,
+    "interest_rate": 15,
+    "time": 10,
+    "investment_type": "sip",
+    "future_value": 41792426.58
+  },
+  {
+    "principal": 200000,
+    "interest_rate": 12,
+    "time": 18,
+    "investment_type": "lumpsum",
+    "future_value": 1457518.53
+  },
+  {
+    "principal": 100000,
+    "interest_rate": 12,
+    "time": 18,
+    "investment_type": "lumpsum",
+    "future_value": 728759.26
+  },
+  {
+    "principal": 2000,
+    "interest_rate": 15,
+    "time": 18,
+    "investment_type": "sip",
+    "future_value": 1838417.76
+  }
+]
