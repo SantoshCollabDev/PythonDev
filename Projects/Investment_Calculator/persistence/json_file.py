@@ -1,8 +1,6 @@
 """ This mdule will have utilities to write the data in json format
-
 Author: Santosh
 """
-
 import json
 import os
 RESULTS_FILE_PATH = "results.json"
